@@ -1,5 +1,7 @@
+
+
 body {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: $helvetica;
   font-size: 16px;
   margin: 0;
 }
@@ -17,10 +19,8 @@ a {
 }
 
 header {
-  background-color: #000;
-  background: -webkit-gradient(linear, left top, left bottom, from(#555), to(#222));
-  background: -moz-linear-gradient(top,  #555, #222);
-  color: #FFF;
+  @include linear-gradient(#777, #444);
+  @include box-shadow(0 0 6px 3px #000);
   font-weight: bold;
   position: relative;
   padding: 15px 100px;
